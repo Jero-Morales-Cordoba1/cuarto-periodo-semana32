@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>ejercicio1 semana32</title>
+	<style>
+	*{
+		background: turquoise;
+	}
+
+		.gu{
+			position: absolute;
+			left:90px ;
+			top: 520px;
+			background: palegreen;
+			height: 40px;
+			width: 300px;
+			font-size: 20px;
+			border-radius: 15px;
+			border: 2px solid black;
+			padding-left: 23px;
+			transition: 0.4s all;
+			background-image: linear-gradient(turquoise, palegreen);
+		}
+
+	
+		
+		.m1{
+			top: 10px;
+			height: 720px;
+			width: 550px;
+			background: palegreen;
+			border: 5px solid black;
+		}
+			.m2{
+			position: absolute;
+			top: 10px;
+			left:650px ;
+			height: 720px;
+			width: 820px;
+			background: palegreen;
+			font-size: 60px;
+			border: 5px solid black;
+		}
+		.men1{
+			position: absolute;
+			left:90px ;
+			width:320px ;
+			height: 40px;
+			top: 120px;
+		    border-radius:15px;
+			font-size: 20px;
+			background-image: linear-gradient(turquoise, palegreen);
+		}
+		.men2{
+			position: absolute;
+			left:90px ;
+			width:320px ;
+			height: 40px;
+			top: 180px;
+			border-radius:15px;
+			font-size: 20px;
+			background-image: linear-gradient(turquoise, palegreen);
+		}
+	
+		
+	</style>
+	
+</head>
+<body>
+<div class="m1" id="me1"></div>
+<div class="gu" onclick="ingresar()">Guarde los datos ingresados</div>
+<div class="m2" id="me2"></div>
+<form>
+	<input class="men1" id="menu1" type="text" placeholder="Nombre del Producto"></input>
+	<input class="men2" id="menu2" type="text" placeholder="Precio del producto"></input>
+</form>
+
+<script>
+	x=[];
+	function ingresar(){
+		y=menu1.value;
+		z=menu2.value;
+		x.push(y,z)
+		n=y;
+		nombre=menu1.innerHTML;
+		nombre=nombre+n;
+		me2.innerHTML=nombre+"<br>";
+		n=z;
+		nomb=me2.innerHTML;
+		nomb=nomb+n;
+		me2.innerHTML=nomb+"<br>";
+	}
+	
+</script>
+</body>
+</html>
